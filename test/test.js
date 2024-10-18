@@ -6,7 +6,7 @@ import findCacheDir from 'find-cache-dir';
 import makeDir from 'make-dir';
 import {deleteAsync} from 'del';
 import {execa} from 'execa';
-import packageConfig from '../package.json' assert {type: 'json'};
+import packageConfig from '../package.json' with {type: 'json'};
 
 const cacheDirectory = findCacheDir({name: 'import-jsx'});
 
